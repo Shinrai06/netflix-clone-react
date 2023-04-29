@@ -1,0 +1,79 @@
+.ListItem {
+    width: 200px;
+    height: 100px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: aliceblue;
+    overflow: hidden;
+}
+
+
+.ListItem > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+video {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ListItem:hover {
+    width: 325px;
+    height: 300px;
+    position: absolute;
+    top: -170px;
+    -webkit-box-shadow: 6px 10px 49px -4px rgba(92,89,92,1);
+    -moz-box-shadow: 6px 10px 49px -4px rgba(92,89,92,1);
+    box-shadow: 6px 10px 49px -4px rgba(92,89,92,1);
+    background-color: #0b0b0b;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.ListItem:hover > img{
+    height: 140px;
+    margin-bottom: 20px;
+} 
+
+.desc, .genre {
+    font-size: 10px;
+    padding: 0 5px;
+    margin-top: 5px;
+}
+
+.icons {
+    display: flex;
+}
+
+.icon {
+    margin: 0 5px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.icon:hover {
+    background-color: rgb(86, 86, 86);
+    border-radius: 50%;
+}
+
+.itemInfoTop {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: lightgray;
+}
+
+.limit {
+    border: 1px solid white;
+    padding: 2px 4px;
+}

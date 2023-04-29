@@ -1,0 +1,68 @@
+.Navbar {
+    width: 100%;
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.3) 70%);
+}
+
+.scrolled {
+    background-color: #0b0b0b;
+}
+
+.container {
+    padding: 0 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+}
+
+.navbarImages {
+    height: 25px;
+}
+
+.right > img {
+    cursor: pointer
+}
+
+span {
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+.link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.icons {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.options {
+    display: none;
+}
+
+.profile:hover > .options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    cursor: pointer;
+}
+
+.options > span {
+    padding: 5px;
+}
+
+.options > span:hover {
+    background-color: #3e3e3e;
+    border-radius: 5px;
+}

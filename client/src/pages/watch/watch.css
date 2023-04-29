@@ -1,0 +1,21 @@
+.Watch > video {
+    width: 100vw;
+    height: 100vh;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    z-index: 999;
+}
+
+.back > span:hover {
+    margin-left: 5px;
+    transition: 0.7s;
+    font-size: large;
+    cursor: pointer;
+}
