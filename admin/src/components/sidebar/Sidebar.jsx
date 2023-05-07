@@ -13,6 +13,7 @@ import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import QuickreplyIcon from '@mui/icons-material/Quickreply';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import ReportIcon from '@mui/icons-material/Report';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
@@ -23,10 +24,12 @@ const Sidebar = () => {
                 Dashboard
             </h3>
             <ul className="sidebarList">
-                <li className="sidebarListItem">
-                    <LineStyleIcon className='sidebarIcon'/>
-                    Home
-                </li>
+                <Link to={"/home"}  className='link'>
+                    <li className="sidebarListItem">
+                        <LineStyleIcon className='sidebarIcon'/>
+                        Home
+                    </li>
+                </Link>
                 <li className="sidebarListItem">
                     <TimelineIcon className='sidebarIcon'/>
                     Analytics
@@ -42,14 +45,18 @@ const Sidebar = () => {
                 Quick Menu
             </h3>
             <ul className="sidebarList">
-                <li className="sidebarListItem">
-                    <PersonIcon className='sidebarIcon'/>
-                    Users
-                </li>
-                <li className="sidebarListItem">
-                    <InventoryIcon className='sidebarIcon'/>
-                    Products
-                </li>
+                <Link to={"/users"} className='link'>
+                    <li className="sidebarListItem">
+                        <PersonIcon className='sidebarIcon'/>
+                        Users
+                    </li>
+                </Link>
+                <Link to={"/products"} className='link'>
+                    <li className="sidebarListItem">
+                        <InventoryIcon className='sidebarIcon'/>
+                        Products
+                    </li>
+                </Link>
                 <li className="sidebarListItem">
                     <AttachMoneyIcon className='sidebarIcon'/>
                     Transcripts
